@@ -8,5 +8,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 
 
-##Electron Output 
+## Electron Output 
 run `npm start` to initialise a electron out put. It will also build the appplication for you
