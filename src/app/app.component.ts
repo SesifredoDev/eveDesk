@@ -12,13 +12,18 @@ import { SocketService } from './socket.service';
 })
 export class AppComponent implements OnInit{
   title = 'eveDesktop';
-  command= '';
-  constructor(private socketService: SocketService){  }
+  command = '';
+  constructor(
+    private socketService: SocketService,
+    
+    ){  }
+
+
   ngOnInit(){
     this.socketService.listen('test').subscribe((data)=>{console.log(data)})
   }
 
-  onSubmit(event: any) {
-    console.log(event.target.command.value)
+  onSubmit() {
+    this.socketService.
  }
 }

@@ -1,4 +1,5 @@
-<form class="example-form" (ngSubmit)="onSubmit($event)">
-  <input name="command" value="Name">
-  <button type="submit" color="primary">Submit</button>
-</form>
+<mat-form-field class="example-full-width">
+  <mat-label>Command</mat-label>
+  <input matInput [(ngModel)]="command" >
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
